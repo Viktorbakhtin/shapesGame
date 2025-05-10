@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Falling Shapes MVC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="layout">
+    <div id="top-ui">
+        <div class="info-block">
+            <label>Shapes:</label>
+            <span id="shapeCount">0</span>
+        </div>
+        <div class="info-block">
+            <label>Area:</label>
+            <span id="area">0</span> px²
+        </div>
+    </div>
+
+    <div id="pixi-container"></div>
+
+    <div id="bottom-ui">
+        <div class="control-group">
+            <label>Spawn Rate:</label>
+            <button id="minusRate">−</button>
+            <span id="shapeRate">1</span>
+            <button id="plusRate">+</button>
+        </div>
+        <div class="control-group">
+            <label>Gravity:</label>
+            <button id="minusGravity">−</button>
+            <span id="gravity">1.0</span>
+            <button id="plusGravity">+</button>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="./src/main.ts"></script>
+</body>
+</html>
